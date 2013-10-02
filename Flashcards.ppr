@@ -1,0 +1,33 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.HideOutput=0
+Compilator.LogType=0
+DefaultCPIndex=0
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+Extensions=*.*
+[Project tree]
+Flashcards
+	+Flashcards
+		index.html
+		js\flashcards.js
+[Open project files]
+0=index.html
+1=js\flashcards.js
+2=files.js
+[Selected Project Files]
+Main=
+Selected=js\flashcards.js
+[index.html]
+TopLine=17
+Caret=29,52
+[js\flashcards.js]
+TopLine=206
+Caret=1,216
+[files.js]
+TopLine=35
+Caret=1,86

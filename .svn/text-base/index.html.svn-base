@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+  	<title>Flashcards Mobile</title>
+    <script src="cordova-1.6.1.js"></script> 
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+    <script type="text/javascript" src="js/jquery.flip.min.js"></script>
+    <script type="text/javascript" src="js/jquery.xml2json.js"></script>
+    <script type="text/javascript" src="flashcards.js"></script>
+    <script type="text/javascript" src="jquery.wipetouch.js"></script>
+	   
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+       
+      #flipbox {
+        height: 300px;
+        width: 250px;
+        padding-top: 10px;
+        line-height: 25px;
+      	font-family: Tahoma, Helvetica;
+      	text-align: center;      	
+      }
+      
+      </style>
+
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">      
+  </head>
+  <body>
+  	<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container" >
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+       <a class="brand" href="#" title="Flashcards for Android Version 0.7">Flashcards</a>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="uibox">
+	  <div class="btn-group">
+	    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+	       Deck
+	       <span class="caret"></span>
+	     </a>
+	     <ul class="dropdown-menu">
+	       <li><a href="#" id="components">Components</a></li>
+	       <li><a href="#" id="usecases">Use cases</a></li>
+	     </ul> 
+	     <button class="btn" id="prev">Previous</button> 
+	     <button class="btn" id="next">Next</button>
+	     <button class="btn" id="flip">Flip</button>
+	     <button class="btn" data-toggle="modal" id="help">Help</button>
+	  </div>
+	  <div class="row"><br></div>
+    
+	  <div class="container-fluid" id="flipbox"></div> 
+	  <div class="row"><br></div>	
+	  <div class="btn-group">
+	      <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" id="deck2">
+	        Deck	
+	        <span class="caret"></span>
+	      </a>
+	      <ul class="dropdown-menu">
+	        <li><a href="#" id="components2">Components</a></li>
+	        <li><a href="#" id="usecases2">Use cases</a></li>
+	      </ul> 
+	      <button class="btn" id="prev2">Previous</button> 
+	      <button class="btn" id="next2">Next</button>
+	      <button class="btn" id="flip2">Flip</button>
+	      <button class="btn" data-toggle="modal" id="help2">Help</button>
+	  </div>  
+	</div>
+ 	<div id="myModal" class="modal hide fade">
+    	<div class="modal-header">
+      	<a class="close" data-dismiss="modal">×</a>
+      	<h3>Help</h3>
+    </div>
+    <div class="modal-body">
+      <p>Use the <b>Type</b> menu to select component or usecase cards. </p>
+      <p>Use <b>Next</b> or <b>Previous</b> to display the next or previous cards.</p> 
+      <p>To flip a card click <b>Flip</b>, or click on the card.</p> 
+    </div>
+    <div class="modal-footer">
+      <a href="#" class="btn" data-dismiss="modal">Close</a>
+    </div>
+  </div> 
+  
+ 					
+  <!-- Le javascript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js/bootstrap-transition.js"></script>
+  <script src="js/bootstrap-alert.js"></script>
+  <script src="js/bootstrap-modal.js"></script>
+  <script src="js/bootstrap-dropdown.js"></script>
+  <script src="js/bootstrap-scrollspy.js"></script>
+  <script src="js/bootstrap-tab.js"></script>
+  <script src="js/bootstrap-tooltip.js"></script>
+  <script src="js/bootstrap-popover.js"></script>
+  <script src="js/bootstrap-button.js"></script>
+  <script src="js/bootstrap-collapse.js"></script>
+  <script src="js/bootstrap-carousel.js"></script>
+  <script src="js/bootstrap-typeahead.js"></script>
+     
+ </body>
+</html>

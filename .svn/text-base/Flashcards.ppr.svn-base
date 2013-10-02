@@ -1,0 +1,36 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.HideOutput=0
+Compilator.LogType=0
+DefaultCPIndex=0
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+Extensions=*.*
+[Project tree]
+Flashcards
+	+Flashcards
+		index.html
+		flashcards.js
+		flashcards.xsd
+		groups.xml
+		glossary.xml
+		data.js
+		usecase_flashcards.xml
+		modal.html
+		flashcards_modal.js
+[Open project files]
+0=index.html
+1=flashcards.js
+[Selected Project Files]
+Main=
+Selected=index.html
+[index.html]
+TopLine=1
+Caret=35,55
+[flashcards.js]
+TopLine=176
+Caret=9,200

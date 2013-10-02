@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<terms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<term>
+		<id>1</id>
+		<title>Active MQ</title>
+		<hint>Active Message Queue</hint>
+		<meaning>A message broker or queue used to provide a reliable messaging service to the CMS.  The default persistence model is used (Apache Derby database) which is persisted to the VAM local disk under the install location.</meaning>
+		<group>BUS and User</group>
+		<type>component</type>
+		<source>Third party</source>
+	</term>
+	<term>
+		<id>2</id>
+		<title>Encoder, Linear</title>
+		<hint>Linear Encoder</hint>
+		<meaning>Compresses input video according to MPEG-4 part 10 or AVC and produces multiple bitrate content copies (subchannels) for a particular channel and send them to SSP-IP via UDP multicast.</meaning>
+		<group>Content</group>
+		<type>component</type>
+		<source>Third party</source>
+	</term>
+	<term>
+		<id>3</id>
+		<title>Hornet Q</title>
+		<hint>Hornet Queue</hint>
+		<meaning>A third party queue software that enables information transfer between NDS components. The components subscribe to a topic or queue and then receive relevant information. CM Srv and UPM use this queue.</meaning>
+		<group>BUS and User</group>
+		<type>component</type>
+		<source>Third party</source>
+	</term>
+	<term>
+		<id>4</id>
+		<title>SMS</title>
+		<hint>Subscriber Management System</hint>
+		<meaning>A broadcaster-hosted subsystem, this component manages the households in the Infinite TV User Management Subsystem. It manages the household entitlements using the REST interface to the UPM. It may receive TVOD billing reports from the UPM.</meaning>
+		<group>BUS and User</group>
+		<type>component</type>
+		<source>Third party</source>
+	</term>
+	<term>
+		<id>5</id>
+		<title>Linear Scheduler</title>
+		<hint>Linear Scheduler</hint>
+		<meaning>Provides the scheduling of access criteria for the linear TV channels to the Catalogue Management subsystem.</meaning>
+		<group>Catalog</group>
+		<type>component</type>
+		<source>Third party</source>
+	</term>
+	<term>
+		<id>6</id>
+		<title>Transcoder, ABR</title>
+		<hint>Transcoder, adaptive  bitrate</hint>
+		<meaning>Transcodes content files to multi-bitrate resolutions. Managed by CMS-Lite.</meaning>
+		<group>Content</group>
+		<type>component</type>
+		<source>Third party</source>
+	</term>
+	<term>
+		<id>7</id>
+		<title>NAS</title>
+		<hint>Network Attached Storage</hint>
+		<meaning>This component is a scalable storage solution. It is used in the Infinite TV system to store encoded, packaged assets.</meaning>
+		<group>Content</group>
+		<type>component</type>
+		<source>Third party</source>
+	</term>
+	<term>
+		<title>VOD Asset Tank</title>
+		<hint>Video On Demand Asset Tank</hint>
+		<meaning>A NAS operated by the customer where assets are taken and deposited during the content ingestion process managed by CMS Lite.</meaning>
+		<group>Content</group>
+		<type>component</type>
+		<source>Third party</source>
+	</term>
+	<term>
+		<id>8</id>
+		<title>ACG</title>
+		<hint>Access Criteria Generator</hint>
+		<meaning>Called by the BSM and provides a generic way to generate access criteria (ACs) based on the Offer XML or PAD skeleton. The generated AC is used to build final FECM, ECM, OECM, etc., packets.</meaning>
+		<group>BUS and User</group>
+		<type>component</type>
+		<source>NDS</source>
+	</term>
+	<term>
+		<id>9</id>
+		<title>CARM</title>
+		<hint>Conditional Access Resource Manager</hint>
+		<meaning>Manages the CA resources assigned to each offer. Such resources include CA Product IDs, Offer IDs, CASs, SuperCASs, and Addressing Expressions. Its interface is called by BSM to reserve resources to create offers. </meaning>
+		<group>BUS and User</group>
+		<type>component</type>
+		<source>NDS</source>
+	</term>
+	<term>
+		<id>10</id>
+		<title>BSM</title>
+		<hint>Business Scenario Manager</hint>
+		<meaning>Abstracts conditional access data and functions. Provides an API to: define conditions for content purchase and consumption as Business Scenarios or Business Rules (BR); describe the BR so that ECMs can be built by ECMS;incorporate BR values in the AC.</meaning>
+		<group>BUS and User</group>
+		<type>component</type>
+		<source>NDS</source>
+	</term>
+	<term>
+		<id>11</id>
+		<title>CCM</title>
+		<hint>Content and Catalog Manager</hint>
+		<meaning>A data master component that provides a near-to-air cache of content metadata, HFECMs, and classification hierarchy data. The component receives this data when the CMS publishes it. </meaning>
+		<group>Catalog</group>
+		<type>component</type>
+		<source>NDS</source>
+	</term>
+	<term>
+		<id>13</id>
+		<title>CI</title>
+		<hint>Catalog Ingest</hint>
+		<meaning>Enables a Broadcasters 3rd party system (e.g. Traffic or Catalog p) to alter catalog data within the CAB Headend. To do so, it ingests the catalog using a generic XML-based CAB headend interface. </meaning>
+		<group>Catalog</group>
+		<type>component</type>
+		<source>NDS</source>
+	</term>
+	<term>
+		<id>14</id>
+		<title>CARM</title>
+		<hint>Conditional Access Resource Manager</hint>
+		<meaning>Manages the CA resources assigned to each offer. Such resources include CA Product IDs and Offer IDs.</meaning>
+		<group>BUS and User</group>
+		<type>component</type>
+		<source>NDS</source>
+	</term>
+	<term>
+		<id>15</id>
+		<title>CDN</title>
+		<hint>Content Distribution Network</hint>
+		<meaning>HTTP GET. The system fetches non-cached chunks from the Origin Server. It fetches once and then can deliver many times, saving bandwidth .</meaning>
+		<group>Content</group>
+		<type>component</type>
+		<source>NDS</source>
+	</term>
+	<term>
+		<id>16</id>
+		<title>Client</title>
+		<hint>Client</hint>
+		<meaning>Software that runs on the end-user’s device and includes the following modules:Navigator Application, controls the UI presented to the user of a device using HTML5 and JavaScript downloaded from the Web Portal, communicates with HEP Server, CDMCv2 (to display linear events), VOD Catalogue (over the CMDCV2 API), and the SDK (to enable secure activation and playback). *SDK, interface to sub-modules that include* ABR client library (PC-only), * DRM-A (Digital Rights management Agent), and TMS Client (TBD).</meaning>
+		<group>Client</group>
+		<type>component</type>
+		<source>NDS</source>
+	</term>
+	<term>
+		<id>17</id>
+		<title>CM Srv</title>
+		<hint>Consumer Manager Server</hint>
+		<meaning>This component is deprecated in Infinite TV. It is included in the current release of Infinite TV for its DDKM (included inside) and some functionality that will be done by UPM in future phases.</meaning>
+		<group>Catalog</group>
+		<type>component</type>
+		<source>NDS</source>
+	</term>
+	<term>
+		<id>18</id>
+		<title>CMDCv2</title>
+		<hint>Content Metadata Discovery Component</hint>
+		<meaning>Receives complex requests from the end-user, e.g., search and query from the device, and breaks them down into requests to the appropriate back-end service(s). The responses are aggregated and encoded using the JSON data-interchange format before being returned to the device.</meaning>
+		<group>Catalog</group>
+		<type>component</type>
+		<source>NDS</source>
+	</term>
+	<term>
+		<id>19</id>
+		<title>DCCS</title>
+		<hint>DRM Concurrency Control Server</hint>
+		<meaning>Responsible for enforcing the policy of limitation of concurrent streaming sessions in a household. Before requesting content delivery, the client must receive permission from the Concurrency Control Server.</meaning>
+		<group>BUS and User</group>
+		<type>component</type>
+		<source>NDS</source>
+	</term>
+	<term>
+		<id>20</id>
+		<title>CMS Lite</title>
+		<hint>Content Management Server Lite</hint>
+		<meaning>This component enables operators to manage the on-demand content lifecycle including content and metadata management. It manages workflows and process content as needed using the Transcoder DLG, VOD Asset Tank, XTV-E, data masters and OASM. It makes decisions based on the Rules Engine. </meaning>
+		<group>Content</group>
+		<type>component</type>
+		<source>NDS</source>
+	</term>
+	<term>
+		<id>21</id>
+		<title>DRMS</title>
+		<hint>Digital Rights Management Server</hint>
+		<meaning>Supports client/server DRM dataflow, preparation, and delivery of various DRM packets to the client consumption devices including secure activation/serialization data and VOD and linear licenses. Includes XTV-S, License Generator, a cookie service, ECM pooler and timely key generator</meaning>
+		<group>DRM and CA</group>
+		<type>component</type>
+		<source>NDS</source>
+	</term>
+	<term>
+		<id>22</id>
+		<title>DDKM</title>
+		<hint>Domain and Device Keys Manager</hint>
+		<meaning>Responsible for DRM-specific domain policy management, domain (household) key storage and management, and device key storage and management. In the current release of Infinite TV, this component is part of CM Srv. Since CM is deprecated, with UPM taking over its functionality, this may change in future.</meaning>
+		<group>BUS and User</group>
+		<type>component</type>
+		<source>NDS</source>
+	</term>
+	<term>
+		<id>23</id>
+		<title>ECMS</title>
+		<hint>Entitlement Control Message Server</hint>
+		<meaning>Provides control words for linear channels.</meaning>
+		<group>DRM and CA</group>
+		<type>component</type>
+		<source>NDS</source>
+	</term>
+	<term>
+		<id>24</id>
+		<title>ECMG-FE</title>
+		<hint>Entitlement Control Message Generator - Front End</hint>
+		<meaning>Answers DVB Simulcrypt requests from the SSP and returns control words (CWs). In this communication, the SSP-IP plays the role of the SCS to request CWs. Can also answer requests from BSM to return FECMs.</meaning>
+		<group>DRM and CA</group>
+		<type>component</type>
+		<source>NDS</source>
+	</term>
+	<term>
+		<id>25</id>
+		<title>LSM</title>
+		<hint>Linear Schedule Manager</hint>
+		<meaning>A data master component providing a cache of the linear schedule and associated metadata within the broadcast window. Input: content definitions and availability information received from North bound clients like CI and Schedule UI. Output: enables OASM to request content and schedule event data. Checks validity of the ingested data ensuring integrity of data model; stores the information in its own persistent DB.</meaning>
+		<group>Catalog</group>
+		<type>component</type>
+		<source>NDS</source>
+	</term>
+	<term>
+		<id>26</id>
+		<title>HEP</title>
+		<hint>Head-End Purchase</hint>
+		<meaning>Enables the end-user to obtain, from their device, purchase options and to display a price for that TVOD offer. Also enables the device to purchase the offer by obtaining authorization to render the content associated with that offer on all devices in that household.</meaning>
+		<group>BUS and User</group>
+		<type>component</type>
+		<source>NDS</source>
+	</term>
+	<term>
+		<id>27</id>
+		<title>OASM</title>
+		<hint>Offer and AC Schedule Manager</hint>
+		<meaning>A data master component that associates offers to assets. Builds schedule of AC changes based on offers, event schedule, channel running status and channel components to be scrambled; builds purchase information (FECMs) to be included in the catalog. Listens to notifications from both NM and LSM, for any updates. Uses its DB to store data from Offer UI, which is used to create and manage offers and their associations.  Additionally, acts as a server for Service UI, Offer Export and Schedule UI.</meaning>
+		<group>BUS and User</group>
+		<type>component</type>
+		<source>NDS</source>
+	</term>
+	<term>
+		<id>28</id>
+		<title>NM</title>
+		<hint>Network Manager</hint>
+		<meaning>A data master component that associates offers to assets. Builds schedule of AC changes based on offers, event schedule, channel running status and channel components to be scrambled; builds purchase information (FECMs) to be included in the catalog. Listens to notifications from both NM and LSM, for any updates. Uses its DB to store data from Offer UI, which is used to create and manage offers and their associations.  Additionally, acts as a server for Service UI, Offer Export and Schedule UI.</meaning>
+		<group>Catalog</group>
+		<type>component</type>
+		<source>NDS</source>
+	</term>
+	<term>
+		<title>Origin Server</title>
+		<hint>Origin Server</hint>
+		<meaning>Source, for the CDN, of content and pointer/manifest file</meaning>
+		<group>Content</group>
+		<type>component</type>
+		<source>NDS</source>
+	</term>
+	<term>
+		<id>29</id>
+		<title>Portal</title>
+		<hint>Portal</hint>
+		<meaning>Responsible for HTTP Ajax calls from the Navigator Application to the CMDC for catalogue/metadata, UPM for profiles, and HEP for purchase respectively. Considered part of the client subsystem. </meaning>
+		<group>Client</group>
+		<type>component</type>
+		<source>NDS</source>
+	</term>
+	<term>
+		<id>30</id>
+		<title>SDLL-G/DNX-G</title>
+		<hint>Secure DLL/ Dynamic Non-eXecutable Generator</hint>
+		<meaning>Highly secure component responsible for creating personalized and platform-oriented security objects. </meaning>
+		<group>Client</group>
+		<type>component</type>
+		<source>NDS</source>
+	</term>
+	<term>
+		<id>31</id>
+		<title>SSP-IP</title>
+		<hint>StreamShaper - Internet Protocol</hint>
+		<meaning>Operates as an encryptor, multiplexer, and secure packager. Actively inspects all video packets. Supports ABR (adaptive bitrate) by synchronizing encryption between all the subchannels (different bitrates) of given channels, packaging in chunks, and reflecting the ABR information in the pointer files.</meaning>
+		<group>Content</group>
+		<type>component</type>
+		<source>NDS</source>
+	</term>
+	<term>
+		<id>32</id>
+		<title>TWC</title>
+		<hint>Two Way Catalog</hint>
+		<meaning>Provides an API which allows end-user-devices (via the CMDC) to search and browse the Headend. Data is sourced from the Data Masters, but also be sourced from an SSR (not in Infinite TV). Searching uses the open source Lucene engine to support auto completion, filters, exact and prefix searching, and combining terms by Boolean logic. </meaning>
+		<group>Content</group>
+		<type>component</type>
+		<source>NDS</source>
+	</term>
+	<term>
+		<id>33</id>
+		<title>SGW</title>
+		<hint>Secure Gateway</hint>
+		<meaning>Responsible for establishing a client/server SAC1 and SAC2 secure channel based on client authentication.</meaning>
+		<group>DRM and CA</group>
+		<type>component</type>
+		<source>NDS</source>
+	</term>
+	<term>
+		<id>34</id>
+		<title>XTV-E</title>
+		<hint>eXtended TV Encryptor</hint>
+		<meaning>Encrypts media files for VOD that were received from a content source. Key files contain the encryption keys used to encrypt the media files. Generates the key files separately from the content, which are used for controlling the reception and viewing of the content.</meaning>
+		<group>Content</group>
+		<type>component</type>
+		<source>NDS</source>
+	</term>
+	<term>
+		<id>35</id>
+		<title>UPM</title>
+		<hint>User Profile Manager</hint>
+		<meaning>Entry point and central repository for user information (domains, devices, user profiles, and entitlements). Responsible for household, user information and device management. It interfaces with the operator SMS and performs the following tasks: receives domain management commands, replies to queries for domain and device information, sends notifications about new device registration.</meaning>
+		<group>BUS and User</group>
+		<type>component</type>
+		<source>NDS</source>
+	</term>
+	<term>
+		<id>36</id>
+		<title>Transcoder DLG</title>
+		<hint>Transcoder DLG</hint>
+		<meaning>Controls the transcoder and sends % updates to the CMS Lite.</meaning>
+		<group>Content</group>
+		<type>component</type>
+		<source>NDS</source>
+	</term>
+	<term>
+		<id>37</id>
+		<title>CMS Rules Engine</title>
+		<hint>Content Management System Rules Engine</hint>
+		<meaning>Examines the requested content handling and applies rules to determine how the CMS will handle the request. </meaning>
+		<group>Content</group>
+		<type>component</type>
+		<source>NDS</source>
+	</term>
+</terms>
