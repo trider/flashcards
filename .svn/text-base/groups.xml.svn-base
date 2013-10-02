@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<groups>
-	<group name="content" color="black"/>
-  <group name="catalog" color="blue"/>
-  <group name="drm and ca" color="red"/>
-  <group name="bus and user" color="green"/>
-  <group name="client" color="darkblue"/>
-</groups>
